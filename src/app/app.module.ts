@@ -6,18 +6,21 @@ import { HeroesModule } from './heroes/heroes.module';
 import { ContadorModule } from './contador/contador/contador.module';
 import { LayoutModule } from './layout/layout.module';
 
+import { DragonballModule } from './dragonball/dragonball.module';
+
+
 @NgModule({
-  declarations: [
-    AppComponent,
-  
-  ],
+  declarations: [AppComponent],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     HeroesModule,
     ContadorModule,
-    LayoutModule
-],
+    LayoutModule,
+    DragonballModule,
+    
+  ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [
+    AppComponent],
 })
 export class AppModule {}

@@ -1,0 +1,22 @@
+<h1>Dragon ball Z</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <app-personajes [data]="personajes"></app-personajes>
+    </div>
+
+    <div class="col">
+    <app-nuevo 
+    [new] = "nuevo"
+    ></app-nuevo>
+    </div>
+</div>
+
+<!-- 
+[value]="nuevo.poder" 
+(input)="cambiarPoder($event)"  -->
+
+<!-- 
+[value]="nuevo.nombre" 
+(input)="cambiarNombre($event)" -->
